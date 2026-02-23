@@ -1,3 +1,4 @@
+// alterado em: 23-02-2026 15h30 THM
 (function() {
     const GITHUB_URL = 'https://cdn.jsdelivr.net/gh/thiagomoskito/delivo-tray@latest/modal-aviso.html';
     let modalLoaded = false;

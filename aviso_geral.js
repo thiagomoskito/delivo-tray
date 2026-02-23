@@ -32,7 +32,9 @@
             tempDiv.innerHTML = text;
             const config = tempDiv.querySelector('#delivo-config');
             const version = config ? config.getAttribute('data-versao') : '1.0';
+            if (version === 'off') return; // SE ESTIVER "OFF", NÃO EXECUTA NADA.
             const storageKey = `delivo_aviso_v_${version}`;
+
 
             // Se o cara já marcou "não exibir" para ESTA versão, cancela
             if (localStorage.getItem(storageKey)) return;
